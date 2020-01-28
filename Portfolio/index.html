@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannas portfolio</title>
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/941cf002ef.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .filter-cat-results .f-cat {
+            opacity: 0;
+            display: none;
+        }
+        
+        .filter-cat-results .f-cat.filtered {
+            opacity: 1;
+            display: table-row;
+            -webkit-animation: fadeIn 0.65s ease forwards;
+            animation: fadeIn 0.65s ease forwards;
+        }
+        .main-banner .container-fluid{
+            position: relative;
+        }
+        .overlay {
+            display:none;
+            position: absolute;;
+            top:0;
+            left: 0;
+            height: 480px;
+            width:100%;
+            background:#fff;
+            overflow:auto;
+            z-index:99;
+        }
+        .overlay-nav-wrap{
+            text-align:right;
+            max-width:90%;
+            margin:0 56px 0 auto;
+        }
+        .overlay-nav-wrap .navbar-nav{
+            margin-top: 60px;
+        }
+        .overlay-nav-wrap .navbar-nav .nav-link{
+            color: #0327e2!important;
+            font-size: 24px;
+        }
+        .overlay-nav-wrap .navbar-nav .nav-item{
+            margin-top: 52px;
+        }
+        .main-banner .overlay .navbar-nav li:last-child a {
+            padding-right: 16px!important;
+        }
+        .navbar-toggler{
+            z-index: 999;
+        }
+        .fa-times{
+            color: #f020af;
+            font-size: 58px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-banner">
+            <!-- <div style="height: inherit; position:absolute;">
+            </div> -->
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark pr-0 menu-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo 1.svg" alt="Hanna's portfolio logo">
+                    </a>
+                    <button class="navbar-toggler" type="button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#bestWorks">Лучшее <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#moreWorks">Больше работ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutMe">Обо мне</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactsMain">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                  
+                </nav>
+                <div class="overlay">
+                        <div class="overlay-nav-wrap">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#bestWorks">Лучшее <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#moreWorks">Больше работ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#aboutMe">Обо мне</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contactsMain">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                            
+                    </div>
+                <div class="row">
+                    <div class="col-7 pl-2">
+                        <h1>Hanna's Portfolio</h1>
+                    </div>
+                </div>
+                <div class="row main-banner-text">
+                    <div class="col-12 col-sm-3 pl-sm-3">
+                        <p class="vertical-text">Портфолио <br> Анны Климушевой </p>
+                    </div>
+                    <div class="col-12 col-sm-8 offset-sm-1 col-lg-4 offset-lg-5 d-flex align-items-end text-right" style="margin-right: 0!important;">
+                        <p style="display: inline-block;" class="display-none-320">
+                            Здравствуйте! Я Анна, молодой веб-дизайнер
+                            На этой странице я хочу представить вам свои работы <br>
+                            за период с 2017 по 2019 год. Спасибо за внимание!
+                        </p>
+                        <!-- text to display on 320 -->                        
+                        <p  class="display320">
+                            Здравствуйте! <br> Я Анна, молодой веб-дизайнер <br>
+                            На этой странице я хочу <br> представить вам свои работы <br>
+                            за период с 2017 по 2019 год. <br> Спасибо за внимание!
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </header>
+    <main>
+        <section class="best-works my-sm-5" id="bestWorks">
+            <div class="container-fluid">
+                <div class="row mens-shop">
+                    <div class="col-12 col-lg-7">
+                        <div class="float-left mens-shop-img">
+                            <img  src="img/03.jpeg" class="bg-img" alt="">
+                            <a href="#" class="mens-shop-link display-none-320">
+                                <img  src="img/02.jpeg" alt="">
+                            </a>
+                            <!-- photo to display on 320 -->
+                            <a href="#" class="mens-shop-link-320 display320">
+                                <img  src="img/jpg_320/02.jpeg" alt="">
+                            </a>
+                            <p class="annotation mt-2 mt-md-5">“Интернет-магазин для <br>
+                            сети мужских товаров ManShop”</p>
+                        </div>
+                        <div class="mens-shop-title">
+                            <h3 class="vertical-text-tb">Лучший сайт</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-lg-5" style="position: relative;">
+                        
+                        <div class="work-desciption">
+                            <h5>Проект “ManShop”</h5>
+                            <p class="text-block">Это интернет магазин мужской одежды, 
+                            обуви и акссесуаров. На сайте представлены товары, 
+                            есть возможность заказа онлайн, личный кабинет, 
+                            все необходимые инструменты для сохранения 
+                            закладок и связи с магазином. Все сделано в минималистичном,
+                             но элегентном английском стиле</p>
+                        </div>                        
+                        <p class="date date-right vertical-text-tb">Октябрь 2018</p>
+                    </div>
+                    
+                </div>
+                <div class="row best-logo">
+                    <div class="col-12">
+                        
+                        <div class="work-title d-flex">
+                            <h3 class="vertical-text" style="z-index: 2;">Лучшее лого</h3>   
+                            <a href="#" class="d-block display-none-320" style="margin-left: -202px; z-index: 5;">
+                                <img src="img/04.jpeg" alt="">
+                            </a>   
+                        <!-- photo to display on 320 -->                            
+                            <a href="#" class="display320">
+                                <img src="img/jpg_320/04.jpeg" alt="">
+                            </a> 
+                        </div>                        
+                    </div>
+                    <div class="col-12 best-logo-block2 d-flex flex-column flex-md-row"  style="z-index: 5;">
+                        <p class="date date-left vertical-text">Август 2018</p>
+                        <div class="work-desciption order-2 order-md-0">
+                            <h5>Проект “Akustikos”</h5>
+                            <p class="text-block ">Логотип для арт-группы Akustikos 
+                                был сделан в стиле неомодерн. 
+                                За основу был взят необычный акцидентный шрифт 
+                                с элементами обрубовки.</p>
+                        </div>
+                        <div class="bp order-1 order-md-1">
+                            <a href="#" class="d-block display-none-320"><img src="img/05.jpeg"  alt=""></a>
+                        <!-- photo to display on 320 -->
+                        <a href="#" class="display320"><img src="img/jpg_320/05.jpeg"  alt=""></a>
+
+                        </div>
+                        
+                        <p class="annotation order-0 order-md-2">“Логотип 
+                            для арт-группы
+                            Akustikos”</p>
+                    </div>
+                </div>
+                <div class="row best-banners d-flex">
+                    <div class="col-12  text-right order-0 order-lg-0">
+                        <img src="img/06.jpeg" class="display-none-320" alt="">
+                        <!-- photo to display on 320 -->
+                        <img src="img/jpg_320/06.jpeg" class="display320" alt="">
+
+                        <p class="annotation text-right mt-2 mt-sm-4">"Баннер №1"</p>
+                        <h3 class="vertical-text-tb">Лучшие <br>баннеры</h3>
+                        <p class="date date-right vertical-text-tb">Январь 2019</p>
+                    </div>
+                    <div class="col-12 order-1 order-lg-1">
+                        <p class="annotation  ">"Баннер №2"</p>
+                        <a href="#" class="d-block display-none-320"><img class="" src="img/07.jpeg" alt=""></a>
+                        <!-- photo to display on 320 -->
+                        <a href="#" class="display320"><img class="" src="img/jpg_320/07.jpeg" alt=""></a>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div class="col-12  order-2 order-lg-2">
+                        <div class="w-sm-50 d-inline-block img-block">
+                            <p class="annotation" style="width: 370px; text-align: right;">"Баннер №3"</p>
+                            <a href="#" class="d-block display-none-320">
+                                <img class="banner-3" src="img/08.jpeg" alt="">
+                            </a>
+                        <!-- photo to display on 320 -->
+                            <a href="#" class="display320">
+                                <img class="banner-3" src="img/jpg_320/08.jpeg" alt="">
+                            </a>
+
+                        </div>
+                        <div class="work-desciption d-inline-block">
+                                <h5>3 баннера для “EnergoTest”</h5>
+                                <p class="text-block">Это трилогия изображений для главного 
+                                    экрана сайта. Их цель максимально 
+                                    информативно и при этом привлекательно 
+                                    выразить деятельность компнаии и спектр их услуг.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more-works-main my-5 filtering" id="moreWorks">
+            <div class="container-fluid">
+                <div class="row text-center"><h3>Больше работ</h3></div>
+                <div class="row work-picker filter-cat">
+                    <ul class="justify-content-center">
+                        <li class="smth"> <button class="filter-btn filter-web" data-cat="filter-web"  > Web</button></li>
+                        <li class="smth"> <button class="filter-btn filter-logo" data-cat="filter-logo"  > Logo</button></li>
+                        <li class="smth"> <button class="filter-btn filter-vector" data-cat="filter-vector"  > Vector</button></li>
+                        <li class="smth"> <button class="filter-btn filter-other" data-cat="filter-other"  > Other</button></li>
+                        <li class="smth"> <button class="filter-btn filter-all" data-cat="filter-all"  > All</button></li>
+                    </ul>
+                </div>
+                <div class="row work-tmbl filter-cat-results">
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4 f-cat" data-filter="filter-web">
+                        <a class="work-link" href="#">
+                            <img src="img/09.jpeg" alt="Промо сайт Партнерская программа BG">
+                            <p>Промо сайт <br> "Партнерская программа BG"</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4 f-cat" data-filter="filter-web">
+                        <a class="work-link" href="#">
+                            <img src="img/10.jpeg" alt="Сайт визитка AgilWorld">
+                            <p class="text-white">Сайт визитка <br> "AgilWorld"</p>
+                        </a>                        
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4 f-cat" data-filter="filter-logo">
+                        <a href="#" class="work-link">
+                            <img src="img/11.jpeg" alt="Логотип Kristale Agency">
+                            <p>Логотип <br> "Kristale Agency"</p>
+                        </a>                        
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4 f-cat" data-filter="filter-vector">
+                        <a href="#" class="work-link">
+                            <img src="img/12.jpeg" alt="Сеть иконок Детство">
+                            <p class="text-white">Сеть иконок <br> "Детство"</p>
+                        </a>                        
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4 f-cat" data-filter="filter-vector">
+                        <a href="#" class="work-link">
+                            <img src="img/13.jpeg" alt="Сеть иконок Web">
+                            <p>Сеть иконок <br> "Web"</p>
+                        </a>                        
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4 f-cat" data-filter="filter-other">
+                        <a href="#" class="work-link">
+                            <img src="img/14.jpeg" alt="Презентационный баннер Horror Quest">
+                            <p class="text-white">Презентационный баннер <br> "Horror Quest"</p>
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutme-main mt-5" id="aboutMe">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2 col-md-1 col-lg-2">
+                        <h3 class="vertical-text">Обо мне</h3> 
+                    </div>
+                    <div class="col-10 col-md-5 col-lg-3 aboutme-photo1">
+                        <img class="display-none-320" src="img/16.jpeg" alt="веб-дизайнер Анна Климушева">
+                        <!-- photo to display on 320 -->
+                        <img class="display320" src="img/jpg_320/16.jpeg" alt="веб-дизайнер Анна Климушева">
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 aboutme-exp-text">
+                        <h5 style=" padding-bottom: 40px;">Опыт</h5>
+                        <p class="text-block">В сфере веб-дизайна я работаю 
+                        с 2017 года. В апреле начала работу 
+                        в компании PanshinGroup, где работала 
+                        до декрета. В отпуске по уходу 
+                        за ребенком занималась фрилансом 
+                        и обучением.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex aboutme-section2">
+                    <div class="col-12 col-md-5 offset-md-3 order-0 order-md-1 order-lg-0 knowledges-img">
+                        <img class="display-none-320" src="img/15.jpeg" alt="веб-дизайнер Анна Климушева">
+                        <!-- photo to display on 320 -->
+                        <img class="display320" src="img/jpg_320/15.jpeg" alt="веб-дизайнер Анна Климушева">
+
+                    </div>
+                    <div class="col-12 col-md-4 order-1 order-md-0 order-lg-1 knowledges-text">
+                            <h5 class="vertical-text">Знания</h5>
+                            <p class="text-block" style="margin-left: 32px;">Основные скилы в веб-дизайне я получила на курсах Highlights и SkillBox. 
+                            Там же изучила основы верстки и бэкэнда. Также успешно прошла обучение 
+                            в художественной школе. За спиной высшее образование по другой специальности.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-main" id="contactsMain">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="text-center text-md-right col-12 col-lg-4 offset-lg-7 offset-xl-8 pr-xl-0">
+                        <h3>Контакты</h3>
+                    </div>
+                </div>
+                <div class="row contact-phones ">
+                    <div class="col-12 col-xl-6">
+                        <a class="facebook"href="https://www.facebook.com/subbdominanta"><i class="fab fa-facebook-square"></i> <span> https://www.facebook.com/subbdominanta</span></a>
+                    </div>
+                    <div class="col-12 col-xl-6 text-xl-right pr-xl-0">
+                        <div class="contact-icons">
+                            <i class="fas fa-phone-square-alt"></i>
+                            <i class="fab fa-telegram"></i> 
+                        </div>        
+                        <span class="telegram-phone ">
+                            <a href="#">+38 (099) 123-45-67</a>
+                            <a href="#" class="pl-sm-3">+38 (093) 123-45-67</a>
+                        </span>                  
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg justify-content-lg-between navbar-dark pr-0">
+                    <div class="brand-wrap">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo 1.svg" alt="">
+                        </a>
+                        <span class="brand-name">Hanna's Portfolio</span>
+                    </div>                   
+                   
+                    <div class="justify-content-end footer-navbar-wrap pull-right">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#bestWorks">Лучшее <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#moreWorks">Больше работ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutMe">Обо мне</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactsMain">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+               
+                <div class="row footer-text">
+                    <div class="col-12 col-md-3">
+                        <p>Hanna's Portfolio 2019</p>
+                    </div>
+                </div>
+                
+            </div>
+
+    </footer>
+
+
+
+<!-- Bootstrap Script -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+// filtering code
+// var filterActive;
+ 
+//  function filterCategory(filterbtn) {        
+ 
+//      $('.filter-cat-results .f-cat').removeClass('filtered'); // reset results list
+     
+     
+//      var selector = ".filtering .f-cat"; // the filtering in action for all criteria
+//      var $btn = $(this);
+//      var attr = filterbtn.getAttribute("data-cat");
+     
+     
+//      if (attr == 'filter-web') {
+//         // Element has this attribute        
+//         var a = 'filter-web';
+//         selector = '[data-filter=' + a + "]";
+        
+//     } else if (attr == 'filter-logo'){
+//         var a = 'filter-logo';
+//         selector = '[data-filter=' + a + "]";  
+//     } else if (attr == 'filter-vector'){
+//         var a = 'filter-vector';
+//         selector = '[data-filter=' + a + "]";  
+//     } else if (attr == 'filter-other'){
+//         var a = 'filter-other';
+//         selector = '[data-filter=' + a + "]";  
+//     } else if (attr == 'filter-all'){
+//         $(selector).addClass('filtered');
+//      }
+
+             
+//      $(selector).addClass('filtered'); // show all results
+//     //  filterActive = cat1; // reset active filter
+//  }
+
+ $('.filtering .f-cat').addClass('filtered'); // start by showing all items
+
+ $('.filter-btn').on('click', function(e) {
+      
+      
+      $('.filter-cat-results .f-cat').removeClass('filtered'); // reset results list
+     
+     
+     var selector = ".filtering .f-cat"; // the filtering in action for all criteria
+      
+     if ($(this).hasClass("filter-active")){
+        $(selector).addClass('filtered');
+        $(this).removeClass("filter-active");
+     } else {
+        $(this).addClass("filter-active");
+        $(this).parent().siblings().children().removeClass("filter-active");  
+        if ($(this).hasClass( "filter-web" )) {
+        // Element has this attribute        
+        var a = 'filter-web';
+        selector = '[data-filter=' + a + "]";        
+        } else if ($(this).hasClass( "filter-logo" )){
+            var a = 'filter-logo';
+            selector = '[data-filter=' + a + "]";  
+        } else if ($(this).hasClass( "filter-vector" )){
+            var a = 'filter-vector';
+            selector = '[data-filter=' + a + "]";  
+        } else if ($(this).hasClass( "filter-other" )){
+            var a = 'filter-other';
+            selector = '[data-filter=' + a + "]";  
+        } else if ($(this).hasClass( "filter-all" )){
+            $(selector).addClass('filtered');
+        }
+
+                
+        $(selector).addClass('filtered');
+        e.preventDefault();
+     }
+     
+     
+ });
+ // call the filtering function when selects are changed
+//  $('.filtering button').click(function() { 
+     
+//      filterCategory('.filter-btn');        
+     
+//  });
+
+
+// Create a clone of the menu, right next to original.
+$(document).ready(function() {
+    var $header = $(".menu-header"),
+        $clone = $header.before($header.clone().addClass("clone"));
+    
+    $(window).on("scroll", function() {
+        var fromTop = $(window).scrollTop();
+        $("body").toggleClass("down", (fromTop > 800));
+    });
+
+// overlay navbar
+
+    $("button.navbar-toggler").click(function(){
+        $(".overlay").fadeToggle(200);
+       $(this).children().toggleClass('fa-bars').toggleClass('fa-times');
+    });
+});
+
+
+</script>
+</body>
+</html>
