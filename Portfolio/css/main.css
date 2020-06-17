@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   background-color: #f7f7f7;
 }
@@ -7,7 +8,11 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Noto Serif", serif;
   margin: 0;
 }
@@ -17,7 +22,8 @@ h1 {
   color: #fff;
 }
 
-p, ul {
+p,
+ul {
   margin: 0;
 }
 
@@ -137,17 +143,8 @@ body.down .menu-header.clone {
 
 .main-banner {
   height: 909px;
-  background: url(../img/01_main_photo.png) no-repeat center top;
+  background: url(../img/main_screen_bg.png) no-repeat center top;
   background-size: cover;
-}
-
-.main-banner h1 {
-  font-size: 13vw;
-  margin-top: 10.5%;
-  line-height: 13vw;
-  color: #ffffff;
-  font-family: "Noto Serif";
-  font-weight: 400;
 }
 
 .main-banner .container-fluid {
@@ -165,35 +162,6 @@ body.down .menu-header.clone {
   padding-right: 0 !important;
 }
 
-.main-banner-text {
-  padding: 18px 0 55px 0;
-  height: 218px;
-}
-
-.main-banner-text div:last-child p {
-  font-size: 14px;
-  line-height: 18px;
-  color: #333;
-  font-family: "Noto Serif", serif;
-  font-weight: 400;
-  font-style: italic;
-  text-align: right;
-}
-
-.main-banner-text div:nth-child(2) {
-  padding-left: 169px;
-}
-
-.main-banner-text .vertical-text {
-  display: inline-block;
-  height: 146px;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: "Noto Serif", serif;
-  line-height: 18px;
-  color: #333;
-}
-
 section.best-works {
   background-image: url(../img/bg_shapes/Shape_1.png), url(../img/bg_shapes/Shape_2.png);
   background-position: 105% 84px, left 744px;
@@ -208,7 +176,7 @@ main {
 
 .date {
   font-size: 14px;
-  color: #0327e2;
+  color: #66669d;
   font-family: "Noto Serif", serif;
   line-height: 18px;
   font-weight: 700;
@@ -217,7 +185,7 @@ main {
 .annotation {
   font-size: 14px;
   line-height: 21px;
-  color: #0327e2;
+  color: #66669d;
   font-family: "Noto Serif";
   font-weight: 400;
   font-style: italic;
@@ -230,8 +198,12 @@ main {
   display: block;
 }
 
+.mens-shop {
+  margin-top: 20px;
+}
+
 .mens-shop h3 {
-  margin-top: 154px;
+  margin-top: 62px;
   height: 58%;
   float: right;
   margin-right: -3.5%;
@@ -241,8 +213,12 @@ main {
   width: 80%;
 }
 
+.best-works {
+  margin-top: 170px;
+}
+
 .best-works h3 {
-  color: #f020af;
+  color: #9a479a;
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 44px;
@@ -251,7 +227,7 @@ main {
 .best-works h5 {
   font-size: 18px;
   line-height: 30px;
-  color: #0327e2;
+  color: #66669d;
   font-family: "Noto Serif", serif;
   font-weight: 700;
   margin-bottom: 41px;
@@ -287,6 +263,7 @@ main {
 
 .best-logo {
   position: relative;
+  margin-bottom: 112px;
 }
 
 .best-logo h3 {
@@ -303,7 +280,7 @@ main {
   width: 300px;
   display: inline-block;
   vertical-align: text-top;
-  margin-top: 210px;
+  margin-top: 280px;
 }
 
 .best-logo .work-desciption h5 {
@@ -316,24 +293,24 @@ main {
 }
 
 .best-logo .annotation {
-  display: inline-block;
-  width: 9%;
+  width: 10%;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -2%;
 }
 
 .best-logo .bp {
-  margin-left: 9.5%;
   width: 370px;
   display: inline-block;
 }
 
 .best-logo .best-logo-block2 {
-  margin-top: -11.2%;
-}
-
-.best-banners {
-  margin-top: -110px;
-  margin-bottom: 140px;
+  margin-top: -18.2%;
 }
 
 .best-banners .order-0 {
@@ -342,12 +319,13 @@ main {
 }
 
 .best-banners .order-1 {
-  margin-top: -52.5%;
+  margin-top: -61%;
   z-index: 5;
 }
 
 .best-banners .order-2 {
-  margin-top: -37px;
+  margin-top: -25%;
+  z-index: 6;
 }
 
 .best-banners .order-2 .img-block {
@@ -363,21 +341,26 @@ main {
 
 .best-banners h3 {
   display: inline;
-  margin-top: 1.3%;
-  margin-right: 35.5%;
+  margin-top: 7.2%;
+  margin-right: 38.5%;
 }
 
 .best-banners .date-right {
   position: absolute;
   right: 7%;
+  top: 59.2%;
 }
 
 .best-banners .annotation {
   padding-bottom: 25px;
 }
 
+.more-works-main {
+  margin-top: 200px;
+}
+
 .more-works-main h3 {
-  color: #f020af;
+  color: #9a479a;
   font-size: 48px;
   font-weight: 600;
   width: 100%;
@@ -419,7 +402,7 @@ main {
 }
 
 .work-picker .filter-btn:hover {
-  color: #0327e2;
+  color: #66669d;
 }
 
 .work-picker .filter-btn:focus {
@@ -427,9 +410,9 @@ main {
 }
 
 .work-picker .filter-active {
-  color: #0327e2;
+  color: #66669d;
   border-radius: 15px;
-  border: 1px solid #0327e2;
+  border: 1px solid #66669d;
   width: 80px;
 }
 
@@ -457,18 +440,21 @@ main {
 
 .work-tmbl p {
   position: absolute;
-  top: 43%;
-  width: 93%;
-  text-align: center;
-  font-weight: 600;
+  top: 30px;
+  font-size: 48px;
+  letter-spacing: -2px;
+  line-height: 40px;
+  color: #ebded9;
+  font-family: "Noto Sans";
+  font-weight: 700;
 }
 
 .aboutme-main {
-  padding-top: 90px;
+  padding-top: 200px;
 }
 
 .aboutme-main h3 {
-  color: #f020af;
+  color: #9a479a;
   font-size: 48px;
 }
 
@@ -480,7 +466,7 @@ main {
 }
 
 .aboutme-main h5 {
-  color: #0327e2;
+  color: #66669d;
   font-size: 18px;
   font-weight: 700;
 }
@@ -508,22 +494,22 @@ main {
 }
 
 .contacts-main {
-  padding-bottom: 86px;
+  padding-bottom: 170px;
   margin-top: -25px;
 }
 
 .contacts-main h3 {
-  color: #f020af;
+  color: #9a479a;
   font-size: 48px;
   font-weight: 700;
 }
 
 .contacts-main i {
-  color: #f020af;
+  color: #9a479a;
 }
 
 .contacts-main a {
-  color: #0327e2;
+  color: #66669d;
   font-size: 24px;
 }
 
@@ -558,8 +544,8 @@ main {
 }
 
 footer {
-  height: 300px;
-  background-image: linear-gradient(11deg, #0327e2 25%, #d014af 80%);
+  height: 296px;
+  background: url(../img/footer_bg.png) no-repeat center top;
 }
 
 footer .navbar {
@@ -918,7 +904,9 @@ footer .brand-name {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
-  .mens-shop .col-12, .best-logo .col-12, .best-banners .col-12:first-child {
+  .mens-shop .col-12,
+  .best-logo .col-12,
+  .best-banners .col-12:first-child {
     padding-left: 15px;
   }
   .menu-header.clone {
