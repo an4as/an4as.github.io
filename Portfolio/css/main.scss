@@ -120,13 +120,19 @@ footer .container-fluid {
   z-index: 999;
   padding-left: 20.8% !important;
   padding-right: 20.8% !important;
-  background-image: linear-gradient(11deg, #0327e2 25%, #d014af 80%);
+  background-color: #f7f7f7;
+  box-shadow: 0px 15px 10px -15px #dcd8d8;
   transition: 0.4s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
 }
 body.down .menu-header.clone {
   top: 0;
 }
-
+.menu-header.clone .nav-link {
+  color: #ebded9;
+}
+.menu-header.clone .nav-link:hover {
+  color: $brandColor1;
+}
 .main-banner {
   height: 909px;
   background: url(../img/main_screen_bg.png) no-repeat center top;
@@ -891,8 +897,7 @@ footer .brand-name {
     height: 480px;
     background: unset;
     background-size: cover;
-    background: rgb(240, 32, 175);
-    background-image: linear-gradient(39deg, #d014af 0%, #0022e7 100%);
+    background: url(../img/main_screen_bg.png) no-repeat center top;
   }
   .main-banner .navbar {
     padding-top: 18px;
