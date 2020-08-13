@@ -23,6 +23,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/inner1.css">
+
     <style>
         .filter-cat-results .f-cat {
             opacity: 0;
@@ -92,161 +94,84 @@
 
 <body>
     <header>
-        <div class="main-banner">
-            <!-- <div style="height: inherit; position:absolute;">
-            </div> -->
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-dark pr-0 menu-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logo.svg" width=109 alt="Hanna's portfolio logo">
-                    </a>
-                    <button class="navbar-toggler" type="button">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#bestWorks">Лучшее <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#moreWorks">Больше работ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#aboutMe">Обо мне</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contactsMain">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </nav>
-                <div class="overlay">
-                    <div class="overlay-nav-wrap">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#bestWorks">Лучшее <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#moreWorks">Больше работ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#aboutMe">Обо мне</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contactsMain">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-
+        <div class="container-nav">
+            <nav class="navbar navbar-expand-lg pr-0 menu-header ">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" width=109 alt="Hanna's portfolio logo">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bestWorks">Лучшее <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#moreWorks">Больше работ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutMe">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactsMain">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
-                <div style="height: 100%; display: flex; justify-content: center; height: auto; margin-top: 205px; position: relative;"
-                    class="main-banner-text">
-                    <img width=1170 src="./img/text_main_screen.png" alt="Hanna Web Design">
-                    <div
-                        style="position: absolute; bottom: -18%; right: 26.7%; text-align: right; color: #fff; font-size: 14px; line-height: 21px; font-family: 'Noto Serif'; font-weight: 400; font-style: italic;">
-                        <div>Здравствуйте! Я, Анна, молодой веб-дизайнер</div>
-                        <div>На этой странице хочу представить вам свои работы</div>
-                        <div>за период с 2017 до нынешнего времени. Спасибо за внимание!</div>
-                    </div>
+
+            </nav>
+            <div class="overlay">
+                <div class="overlay-nav-wrap">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bestWorks">Лучшее <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#moreWorks">Больше работ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutMe">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactsMain">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
+
             </div>
-
         </div>
     </header>
     <main>
-        <section class="best-works" id="bestWorks">
-            <div class="container-fluid">
-                <div class="row mens-shop">
-                    <div class="col-12 col-lg-7">
-                        <div class="float-left mens-shop-img">
-                            <img src="img/03.jpeg" class="bg-img" alt="">
-                            <a href="#" class="mens-shop-link display-none-320">
-                                <img src="img/02.jpeg" alt="">
-                            </a>
-                            <!-- photo to display on 320 -->
-                            <a href="#" class="mens-shop-link-320 display320">
-                                <img src="img/02.jpeg" width=320 alt="">
-                            </a>
-                            <p class="annotation mt-2 mt-md-5">“Интернет-магазин для <br>
-                                сети мужских товаров ManShop”</p>
+        <section class="main-content" style="margin-top: 100px;">
+            <div class="content-container">
+                <div class="content-row first-row">
+                    <div class="left-content-box">
+                        <div style="display: flex;">
+                            <div style="display: flex; flex-direction: column; ">
+                                <div class="content-img-box" style="justify-content: flex-end; align-items: flex-end;">
+                                    <img src="img/inner2/01.png" alt="" class="first-row-img">
+                                </div>
+
+                                <div class="annotation" style="padding-top: 55px; width: 200px">“Логотип для
+                                    арт-группы
+                                    Akustikos”</div>
+                            </div>
+                            <div class="show-tablet date-container">
+                                <div class=" date vertical-text-tb">Август 2018</div>
+                            </div>
                         </div>
-                        <div class="mens-shop-title">
-                            <h3 class="vertical-text-tb">Интернет магазин</h3>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-lg-5" style="position: relative;">
-
-                        <div class="work-desciption">
-                            <h5>Проект “ManShop”</h5>
-                            <p class="text-block">Это интернет магазин мужской одежды,
-                                обуви и акссесуаров. На сайте представлены товары,
-                                есть возможность заказа онлайн, личный кабинет,
-                                все необходимые инструменты для сохранения
-                                закладок и связи с магазином. Все сделано в минималистичном,
-                                но элегентном английском стиле</p>
-                        </div>
-                        <p class="date date-right vertical-text-tb">Октябрь 2018</p>
-                    </div>
-
-                </div>
-                <div class="row best-logo block-768">
-                    <div class="col-12">
-
-                        <div class="work-title d-flex">
-                            <h3 class="vertical-text" style="z-index: 2;">Лого</h3>
-                            <a href="#" class="d-block display-none-320" style="z-index: 5;">
-                                <img src="img/04.jpeg" alt="">
-                            </a>
-                            <!-- photo to display on 320 -->
-                            <a href="#" class="display320">
-                                <img src="img/04.jpeg" alt="">
-                            </a>
+                        <div class="show-tablet" style="align-self: center;">
+                            <h3 class="vertical-text-tb title-text">Проект “Akustikos”</h3>
                         </div>
                     </div>
-                    <div class="col-12 best-logo-block2 d-flex flex-column flex-md-row">
-                        <p class="date date-left vertical-text">Август 2018</p>
-                        <div class="work-desciption order-2 order-md-0">
-                            <h5>Проект “Akustikos”</h5>
-                            <p class="text-block ">Логотип для арт-группы Akustikos
-                                был сделан в стиле неомодерн.
-                                За основу был взят необычный акцидентный шрифт
-                                с элементами обрубовки.</p>
-                        </div>
-                        <div class="bp order-1 order-md-1">
-                            <a href="#" class="d-block display-none-320"><img src="img/05.jpeg" alt=""></a>
-                            <!-- photo to display on 320 -->
-                            <a href="#" class="display320"><img src="img/05.jpeg" alt=""></a>
-
-                        </div>
-
-                        <div class="annotation order-0 order-md-2">
-                            <p>
-                                “Логотип <br />
-                                для арт-группы
-                                Akustikos”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row best-logo show-768">
-                    <div class="col-12 d-flex">
-                        <div>
-                            <div class="work-title d-flex">
-                                <h3 class="vertical-text" style="z-index: 2;">Лого</h3>
-                                <a href="#" class="d-block display-none-320" style="z-index: 5;">
-                                    <img src="img/04.jpeg" alt="">
-                                </a>
-                                <!-- photo to display on 320 -->
-                                <a href="#" class="display320">
-                                    <img src="img/04.jpeg" alt="">
-                                </a>
+                    <div class="right-content-box first-row-right-box">
+                        <div style="display: flex;">
+                            <div class="hide-tablet" style="align-self: center;">
+                                <h3 class="vertical-text-tb title-text">Проект “Akustikos”</h3>
                             </div>
                             <div>
-                                <p class="date date-left vertical-text">Август 2018</p>
-                                <div class="work-desciption">
-                                    <h5>Проект “Akustikos”</h5>
+                                <div class="work-descrpt">
+                                    <h5 class="text-title">Проект “Akustikos”</h5>
                                     <p class="text-block ">Логотип для арт-группы Akustikos
                                         был сделан в стиле неомодерн.
                                         За основу был взят необычный акцидентный шрифт
@@ -254,62 +179,72 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="bp">
-                                <a href="#" class="d-block display-none-320"><img src="img/05.jpeg" alt=""></a>
-                                <!-- photo to display on 320 -->
-                                <a href="#" class="display320"><img src="img/05.jpeg" alt=""></a>
-
-                            </div>
-
-                            <div class="annotation">
-                                <p>
-                                    “Логотип <br />
-                                    для арт-группы
-                                    Akustikos”
-                                </p>
-                            </div>
+                        <div class="hide-tablet date-container">
+                            <div class=" date vertical-text-tb">Август 2018</div>
                         </div>
                     </div>
                 </div>
-                <div class="row best-banners d-flex">
-                    <div class="col-12  text-right order-0 order-lg-0">
-                        <img src="img/06.jpeg" class="display-none-320" alt="">
-                        <!-- photo to display on 320 -->
-                        <img src="img/06.jpeg" width=320 class="display320" alt="">
-                        <h3 class="vertical-text-tb">Сайт и бренд</h3>
-                        <p class="date date-right vertical-text-tb">Январь 2019</p>
-                    </div>
-                    <div class="col-12 order-1 order-lg-1">
-                        <p class="annotation  ">"Логотип LisEvent"</p>
-                        <a href="#" class="d-block display-none-320"><img class="" src="img/07.jpeg" alt=""></a>
-                        <!-- photo to display on 320 -->
-                        <a href="#" class="display320"><img class="" src="img/07.jpeg" width=320 alt=""></a>
+                <div class="content-row second-row">
+                    <div class="left-content-box second-row-left-box">
 
+                        <div class="content-text">
+                            <h5 class="text-title">Разработка и важные элементы</h5>
+                            <p class="text-block" style="width: 100%;">
+                                Это интернет магазин мужской одежды, обуви и акссесуаров. На сайте представлены товары,
+                                есть возможность заказа онлайн, личный кабинет,
+                                все необходимые инструменты
+                                для сохранения закладок и связи
+                                с магазином. Все сделано
+                                в минималистичном, но элегентном английском стиле
 
+                                Это интернет магазин мужской одежды, обуви и акссесуаров. На сайте представлены товары,
+                                есть возможность заказа онлайн, личный кабинет,
+                                все необходимые инструменты
+                                для сохранения закладок и связи
+                                с магазином.
 
-                    </div>
-
-                    <div class="col-12  order-2 order-lg-2">
-                        <div class="w-sm-50 d-inline-block img-block">
-                            <a href="#" class="d-block display-none-320">
-                                <img class="banner-3" src="img/08.jpeg" alt="">
-                            </a>
-                            <!-- photo to display on 320 -->
-                            <a href="#" class="display320">
-                                <img class="banner-3" src="img/08.jpeg" alt="">
-                            </a>
-
+                                Все сделано
+                                в минималистичном, но элегентном английском стиле
+                            </p>
                         </div>
-                        <div class="work-desciption d-inline-block">
-                            <h5>Проект LisEvent</h5>
-                            <p class="text-block">Проект для ивент агенства LisEvent включал в себя разработку
-                                индивидуального стиля и сайта. Яркий, сочный, запоминающийся. На сайте предусмотрены
-                                возможности ознакомления и заказа всех услуг.
+                    </div>
+                    <div class="right-content-box">
+                        <div class="content-img-box" style="justify-content: flex-end;  align-items: flex-start;">
+                            <img src="img/inner2/01.png" alt="" class="second-row-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row" style="margin-bottom: 170px;">
+                    <div class="left-content-box">
+                        <div class="content-img-box" style="justify-content: flex-start; align-items: flex-start;">
+                            <img src="img/inner2/01.png" alt="" class="third-row-img">
+                        </div>
+                    </div>
+                    <div class="right-content-box third-row-right-box">
+                        <div class="content-text">
+                            <h5 class="text-title">Разработка и важные элементы</h5>
+                            <p class="text-block" style="width: 100%">
+                                Это интернет магазин мужской одежды, обуви и акссесуаров. На сайте представлены товары,
+                                есть возможность заказа онлайн, личный кабинет,
+                                все необходимые инструменты
+                                для сохранения закладок и связи
+                                с магазином. Все сделано
+                                в минималистичном, но элегентном английском стиле
+
+                                Это интернет магазин мужской одежды, обуви и акссесуаров. На сайте представлены товары,
+                                есть возможность заказа онлайн, личный кабинет,
+                                все необходимые инструменты
+                                для сохранения закладок и связи
+                                с магазином.
+
+                                Все сделано
+                                в минималистичном, но элегентном английском стиле
                             </p>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <img src="img/inner2/04.png" alt="" style="width: 100%; height: auto;"></div>
             </div>
         </section>
         <section class="more-works-main filtering" id="moreWorks">
@@ -387,52 +322,10 @@
                 </div>
             </div>
         </section>
-
-        <section class="aboutme-main" id="aboutMe">
+        <section class="contacts-main" id="contactsMain" style="margin-top: 120px">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-2 col-md-1 col-lg-2">
-                        <h3 class="vertical-text">Обо мне</h3>
-                    </div>
-                    <div class="col-10 col-md-5 col-lg-3 aboutme-photo1">
-                        <img class="display-none-320" src="img/16.jpeg" alt="веб-дизайнер Анна Климушева">
-                        <!-- photo to display on 320 -->
-                        <img class="display320" src="img/16.jpeg" alt="веб-дизайнер Анна Климушева">
-
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 aboutme-exp-text">
-                        <h5 style=" padding-bottom: 40px;">Опыт</h5>
-                        <p class="text-block">В сфере веб-дизайна я работаю
-                            с 2017 года. В апреле начала работу
-                            в компании PanshinGroup, где работала
-                            до декрета. В отпуске по уходу
-                            за ребенком занималась фрилансом
-                            и обучением.
-                        </p>
-                    </div>
-                </div>
-                <div class="row d-flex aboutme-section2">
-                    <div class="col-12 col-md-5 offset-md-3 order-0 order-md-1 order-lg-0 knowledges-img">
-                        <img class="display-none-320" src="img/15.jpeg" alt="веб-дизайнер Анна Климушева">
-                        <!-- photo to display on 320 -->
-                        <img class="display320" src="img/15.jpeg" alt="веб-дизайнер Анна Климушева">
-
-                    </div>
-                    <div class="col-12 col-md-4 order-1 order-md-0 order-lg-1 knowledges-text">
-                        <h5 class="vertical-text">Знания</h5>
-                        <p class="text-block" style="margin-left: 32px;">Основные скилы в веб-дизайне я получила на
-                            курсах Highlights и SkillBox.
-                            Там же изучила основы верстки и бэкэнда. Также успешно прошла обучение
-                            в художественной школе. За спиной высшее образование по другой специальности.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contacts-main" id="contactsMain">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="text-center text-md-right col-12 col-lg-4 offset-lg-7 offset-xl-8 pr-xl-0">
+                    <div class="text-center col-12 col-lg-4 offset-lg-7 offset-xl-8 pr-xl-0">
                         <h3>Контакты</h3>
                     </div>
                 </div>

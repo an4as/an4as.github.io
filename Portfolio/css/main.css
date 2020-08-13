@@ -35,6 +35,10 @@ ul {
   display: none;
 }
 
+.show-768 {
+  display: none;
+}
+
 .text-block {
   width: 300px;
   font-size: 14px;
@@ -144,7 +148,7 @@ body.down .menu-header.clone {
 }
 
 .menu-header.clone .nav-link {
-  color: #ebded9;
+  color: #a787a7;
 }
 
 .menu-header.clone .nav-link:hover {
@@ -514,13 +518,42 @@ main {
   font-weight: 700;
 }
 
-.contacts-main i {
+.contacts-main .first-clmn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts-main .second-clmn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-main .first-clmn a i,
+.contacts-main .second-clmn a i {
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contacts-main .first-clmn a i {
   color: #9a479a;
 }
 
-.contacts-main a {
+.contacts-main .second-clmn a i {
   color: #66669d;
-  font-size: 24px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .contact-phones {
@@ -536,13 +569,12 @@ main {
   margin-right: 17px;
 }
 
-.fa-facebook-square,
-.fa-telegram {
-  margin-right: 25px;
-}
-
-.fa-telegram {
-  font-size: 32px;
+.contacts-main .telegram-phone a {
+  font-size: 24px;
+  line-height: 30px;
+  color: #66669d;
+  font-weight: 400;
+  font-family: "Noto Sans";
 }
 
 .contacts-main .contact-icons {
@@ -578,6 +610,10 @@ footer .brand-wrap {
 
 footer .navbar-brand {
   margin-bottom: -0.5rem;
+}
+
+footer .navbar-brand img {
+  width: 500px;
 }
 
 footer .brand-name {
@@ -658,6 +694,9 @@ footer .brand-name {
 }
 
 @media (max-width: 1198px) {
+  .main-banner-text img {
+    width: 100%;
+  }
   .mens-shop h3 {
     margin-right: -11.5%;
   }
@@ -669,8 +708,23 @@ footer .brand-name {
     margin-right: 1rem;
     font-size: 2rem;
   }
-  .contact-phones div:first-child {
+  .contacts-main .first-clmn {
     margin-bottom: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-main .first-clmn i {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .contacts-main .second-clmn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-main .telegram-phone {
+    margin-left: 20px;
   }
   .knowledges-text .text-block {
     width: 90%;
@@ -681,15 +735,29 @@ footer .brand-name {
 }
 
 @media (max-width: 992px) {
+  .mens-shop .col-12:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .mens-shop .work-desciption .text-block {
     width: 80%;
+  }
+  .mens-shop h3 {
+    height: 59%;
   }
   .main-banner-text div:last-child {
     padding-bottom: 32px;
   }
   .mens-shop .work-desciption {
     padding-top: 30px;
-    padding-left: 0;
+    padding-left: 8%;
+  }
+  .mens-shop .date-right {
+    right: 9%;
   }
   .best-logo {
     margin-top: 100px;
@@ -703,15 +771,16 @@ footer .brand-name {
   .best-logo h3 {
     position: absolute;
     top: 110px;
+    left: 8%;
     width: unset;
   }
   .best-logo .work-title a {
     margin-left: 15% !important;
   }
   .best-logo .work-desciption {
-    margin-top: 159px;
+    margin-top: 245px;
     padding-left: 0;
-    margin-left: 2%;
+    margin-left: 10%;
     width: 41%;
   }
   .best-logo .work-desciption .text-block {
@@ -720,12 +789,28 @@ footer .brand-name {
   .best-logo .date-left {
     bottom: 30px;
     left: unset;
-    right: 344px;
+    right: 415px;
   }
   .best-logo .bp {
     margin-left: 2%;
     padding-top: 0;
     margin-top: -47px;
+  }
+  .best-banners .annotation {
+    padding-left: 8%;
+  }
+  .best-banners .order-1 {
+    margin-top: -68.5%;
+  }
+  .best-banners .order-1 a {
+    padding-left: 8%;
+  }
+  .best-banners .order-2 .work-desciption {
+    margin-left: 8.5%;
+    padding-top: 25px;
+  }
+  .best-banners .date-right {
+    bottom: -266px;
   }
   .contacts-main {
     margin-top: 80px;
@@ -746,6 +831,12 @@ footer .brand-name {
 }
 
 @media (max-width: 768px) {
+  .block-768 {
+    display: none;
+  }
+  .show-768 {
+    display: block;
+  }
   .main-banner .container-fluid {
     padding-left: 15px;
   }
@@ -769,32 +860,32 @@ footer .brand-name {
   .mens-shop h3 {
     margin-right: 1.5%;
   }
-  .best-logo .bp a {
-    width: 100%;
+  .best-logo .work-desciption {
+    margin-top: 12%;
   }
-  .best-logo .bp a img {
-    width: 95%;
+  .best-logo .show-768 .col-12 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .best-logo .annotation {
-    margin-right: unset;
-    width: 16%;
-    margin-top: 0;
-    margin-left: 0;
-    position: absolute;
-    top: -42%;
-    right: 35.5%;
+  .best-logo .show-768 .bp a img {
+    width: 85%;
   }
   .best-banners {
     margin-top: 130px;
   }
   .best-banners .date-right {
     left: unset;
-    right: 54%;
-    bottom: -326px;
+    right: 3%;
+    bottom: -130px;
   }
   .best-banners .order-0 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     margin-left: 0;
     position: relative;
+    margin-top: -25%;
   }
   .best-banners .order-0 .annotation {
     position: absolute;
@@ -802,18 +893,20 @@ footer .brand-name {
     top: 54.5%;
   }
   .best-banners .order-0 img {
-    width: 655px !important;
+    width: 485px !important;
     height: auto;
     float: right;
   }
   .best-banners h3 {
-    float: right;
-    margin-top: 84px;
-    padding-left: 0;
+    margin-top: -26.8%;
+    margin-right: -71.5%;
   }
   .best-banners .order-1 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
     padding-top: 0;
-    margin-top: -431px;
+    margin-top: 0;
     position: relative;
   }
   .best-banners .order-1 .annotation {
@@ -826,9 +919,13 @@ footer .brand-name {
   }
   .best-banners .order-2 {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .best-banners .order-2 .img-block {
-    float: right;
     padding-left: 0;
   }
   .best-banners .order-2 .work-desciption {
@@ -1200,6 +1297,9 @@ footer .brand-name {
   }
   footer .navbar {
     padding-top: 25px;
+  }
+  footer .navbar-brand img {
+    width: 100%;
   }
   footer .brand-wrap {
     margin-top: 0%;
